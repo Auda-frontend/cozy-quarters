@@ -12,6 +12,7 @@ import { formatPrice } from '../utils/prediction';
 interface PredictionResultProps {
   price: number | null;
   isLoading?: boolean;
+  isUsingFallback?: boolean
 }
 
 const PredictionResult: React.FC<PredictionResultProps> = ({ price, isLoading = false }) => {

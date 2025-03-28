@@ -32,16 +32,17 @@ export const neighborhoods = [
 ];
 
 export interface HouseData {
-  squareFootage: number;
   bedrooms: number;
   bathrooms: number;
+  squareFootage: number;
   yearBuilt: number;
   neighborhood: string;
   lotSize: number;
   garage: number;
-  basement: boolean;
-  centralAir: boolean;
-  kitchenQuality: number;
+  propertyType?: string;  // h=house, u=unit, t=townhouse
+  basement?: boolean;
+  centralAir?: boolean;
+  kitchenQuality?: number;
 }
 
 // Default values for the house form

@@ -1,0 +1,313 @@
+feature,importance
+bedrooms,0.23044527073106016
+lotSize,0.1190792265597074
+yearBuilt,0.11871051036065074
+squareFootage,0.11229339197965968
+bathrooms,0.05874180508065481
+garage,0.024046943433427878
+neighborhood_Brighton,0.023516604123146566
+neighborhood_Toorak,0.01612488734908486
+neighborhood_Kew,0.014679561892013577
+neighborhood_Hawthorn,0.013803616176950457
+neighborhood_Armadale,0.010437882258949434
+neighborhood_Glen Iris,0.01039095749843268
+neighborhood_Albert Park,0.0098108169493004
+neighborhood_Hawthorn East,0.009765140823763707
+neighborhood_Camberwell,0.009469214165735517
+neighborhood_Balwyn North,0.00872733544054186
+neighborhood_Balwyn,0.008533163235183817
+neighborhood_Malvern,0.008324693200186202
+neighborhood_Canterbury,0.007824005044540082
+neighborhood_Middle Park,0.007400789022197421
+neighborhood_Hampton,0.007108628896594506
+neighborhood_South Yarra,0.00562792172839216
+neighborhood_East Melbourne,0.005590698925585462
+neighborhood_Malvern East,0.005572523011008492
+neighborhood_Brighton East,0.004983035247844894
+neighborhood_Surrey Hills,0.004519578741047856
+neighborhood_Port Melbourne,0.0043618909172734146
+neighborhood_Northcote,0.004282586334757967
+neighborhood_St Kilda,0.004079948145709947
+neighborhood_Carlton North,0.0037677729855586117
+neighborhood_South Melbourne,0.003708873856526097
+neighborhood_Mulgrave,0.003670415180616766
+neighborhood_Richmond,0.0035240637235028
+neighborhood_Fitzroy North,0.003332320685373587
+neighborhood_Prahran,0.0031011438510764426
+neighborhood_Ashburton,0.0028608060130373664
+neighborhood_Ivanhoe,0.0028290790549240132
+neighborhood_Eaglemont,0.002800627559895521
+neighborhood_Essendon,0.002770556905767664
+neighborhood_Kew East,0.002369506307425256
+neighborhood_Reservoir,0.002325372325128627
+neighborhood_Williamstown,0.002259215914550524
+neighborhood_Bentleigh East,0.0020743593780801536
+neighborhood_Bentleigh,0.0020010154794802585
+neighborhood_Box Hill,0.0019643626421702192
+neighborhood_Brunswick,0.0019268743566799428
+neighborhood_Burwood,0.0018767858563700343
+neighborhood_Elwood,0.0018327337410083827
+neighborhood_Coburg,0.0017966787740311102
+neighborhood_Alphington,0.0017341188435301535
+neighborhood_Moonee Ponds,0.0016576306854547654
+neighborhood_Ormond,0.0015941978474095432
+neighborhood_Mont Albert,0.001545582678531382
+neighborhood_Elsternwick,0.001536062136199715
+neighborhood_Fitzroy,0.0015269760664174492
+neighborhood_Doncaster,0.0014914615775695026
+neighborhood_Carnegie,0.0014789955263492633
+neighborhood_Newport,0.001465548647535856
+neighborhood_Sandringham,0.001404313495364498
+neighborhood_Glen Waverley,0.0013258375104847606
+neighborhood_Preston,0.0012615108291188129
+neighborhood_Ivanhoe East,0.001182076218200494
+neighborhood_Doncaster East,0.001177940931146817
+neighborhood_Mount Waverley,0.0011661238519614994
+neighborhood_Aberfeldie,0.0011556278622012923
+neighborhood_Windsor,0.0011266057773525013
+neighborhood_Ascot Vale,0.001116491442748658
+neighborhood_Murrumbeena,0.0010783458432792146
+neighborhood_Caulfield North,0.001063479903846761
+neighborhood_Thornbury,0.0010453117091293446
+neighborhood_Yarraville,0.0010267749715170726
+neighborhood_Maribyrnong,0.000981075813048528
+neighborhood_Glenroy,0.0009535996025977606
+neighborhood_Carlton,0.0009374203345457685
+neighborhood_Clifton Hill,0.0008865223715508745
+neighborhood_Footscray,0.0008561815946634644
+neighborhood_Bulleen,0.0008191296994353771
+neighborhood_Beaumaris,0.0007912655379517985
+neighborhood_Caulfield South,0.0007595086118682937
+neighborhood_Sunshine West,0.0007504986892144775
+neighborhood_Brunswick East,0.0007450904597166673
+neighborhood_Fawkner,0.0007364814488757795
+neighborhood_North Melbourne,0.0007277634119569421
+neighborhood_Berwick,0.0007135841623802926
+neighborhood_Kensington,0.0006905374777187278
+neighborhood_Parkville,0.0006848939197870157
+neighborhood_Brunswick West,0.0006768715972906933
+neighborhood_Epping,0.0006476526363603294
+neighborhood_Albion,0.0006377243195445414
+neighborhood_Strathmore,0.000637342048598883
+neighborhood_Templestowe Lower,0.0006146648098925992
+neighborhood_West Melbourne,0.0006136043612780384
+neighborhood_Sunshine,0.0006127488930215348
+neighborhood_Flemington,0.0005986423961367085
+neighborhood_Highett,0.0005978049924249074
+neighborhood_West Footscray,0.0005965240917853186
+neighborhood_Sunbury,0.0005919528068783705
+neighborhood_Werribee,0.0005836441341482337
+neighborhood_Abbotsford,0.0005641504135042579
+neighborhood_Collingwood,0.0005567591600916125
+neighborhood_Parkdale,0.0005533018028838531
+neighborhood_Hoppers Crossing,0.0005465406400322321
+neighborhood_Fairfield,0.0005144513808588963
+neighborhood_Heidelberg West,0.0005128578698774907
+neighborhood_Ashwood,0.0005024818334263645
+neighborhood_Rosanna,0.000501900825415338
+neighborhood_Templestowe,0.0004941813086855587
+neighborhood_Pascoe Vale,0.0004925779613118147
+neighborhood_Seddon,0.0004921896389630388
+neighborhood_Niddrie,0.0004895439371426336
+neighborhood_Melton South,0.0004763348540048541
+neighborhood_Avondale Heights,0.00047029184440413674
+neighborhood_Hampton East,0.00044613675563067145
+neighborhood_Blackburn,0.00043142235477698057
+neighborhood_Craigieburn,0.00042217742274464407
+neighborhood_Coburg North,0.0004175399551799612
+neighborhood_Hughesdale,0.0004088618664625057
+neighborhood_Oakleigh,0.0004025269492506218
+neighborhood_Oakleigh South,0.00039706024608662295
+neighborhood_Heidelberg,0.0003832421796481128
+neighborhood_Cheltenham,0.0003727570704015179
+neighborhood_Black Rock,0.0003722457940098274
+neighborhood_Maidstone,0.0003668646255973885
+neighborhood_Moorabbin,0.0003479933466301596
+neighborhood_Keilor East,0.0003471769213031113
+neighborhood_Caroline Springs,0.0003348427981869894
+neighborhood_Meadow Heights,0.00032141275242724565
+neighborhood_Caulfield,0.0003108919370539333
+neighborhood_Princes Hill,0.0003074694786638963
+neighborhood_Essendon West,0.0003034340210933898
+neighborhood_Taylors Lakes,0.00030074538672319947
+neighborhood_Broadmeadows,0.000298967724748225
+neighborhood_Chadstone,0.00027697564435258523
+neighborhood_Balaclava,0.0002737560997151115
+neighborhood_Oak Park,0.00027347090557519523
+neighborhood_South Morang,0.00027188970875088793
+neighborhood_Heidelberg Heights,0.0002693227058817458
+neighborhood_Clayton,0.00026020216958166307
+neighborhood_Cremorne,0.00025891267978019527
+neighborhood_Wantirna South,0.00025380104280896493
+neighborhood_Melton,0.00025322034241106366
+neighborhood_Sunshine North,0.0002513922801068107
+neighborhood_Roxburgh Park,0.0002509653708632087
+neighborhood_Altona,0.00024890484474272286
+neighborhood_Ripponlea,0.00024509216232084473
+neighborhood_Spotswood,0.00024090817937151045
+neighborhood_Hadfield,0.00023397625383312964
+neighborhood_McKinnon,0.00022503181180547695
+neighborhood_Kealba,0.00021851566381154197
+neighborhood_Burwood East,0.00021715233700156822
+neighborhood_Mentone,0.00021304655114350336
+neighborhood_Ferntree Gully,0.00020165333678915734
+neighborhood_Mill Park,0.00019696619269530977
+neighborhood_Pakenham,0.00019107974142336355
+neighborhood_Caulfield East,0.00018915450200848637
+neighborhood_Viewbank,0.00018758792340983584
+neighborhood_Burnley,0.00018714248579084657
+neighborhood_Hillside,0.00018456723805242048
+neighborhood_Gowanbrae,0.00018197862251478973
+neighborhood_Melton West,0.00018191379423041922
+neighborhood_Seaholme,0.0001797943978704417
+neighborhood_Seaford,0.00017708226267750853
+neighborhood_Kingsville,0.00017412243759801896
+neighborhood_Blackburn North,0.0001737087346990865
+neighborhood_Blackburn South,0.00017052663317047685
+neighborhood_Wheelers Hill,0.00016911413847436844
+neighborhood_Croydon,0.00016711413606905755
+neighborhood_Travancore,0.0001668200881693067
+neighborhood_Wollert,0.00016263074270647117
+neighborhood_Dandenong North,0.00016005973796560713
+neighborhood_Williamstown North,0.00015704896974388024
+neighborhood_Gardenvale,0.0001528438822429905
+neighborhood_Altona North,0.00014775926697528288
+neighborhood_Oakleigh East,0.0001470472509747781
+neighborhood_Mordialloc,0.000145764998408102
+neighborhood_Aspendale,0.00014567396350693317
+neighborhood_Airport West,0.00014434762765132983
+neighborhood_Kurunjang,0.0001415640777983043
+neighborhood_Ringwood,0.000139546780663765
+neighborhood_Carrum,0.0001393091632753313
+neighborhood_Point Cook,0.00013838012744735314
+neighborhood_Dandenong,0.00013770515395981667
+neighborhood_St Albans,0.00013671286615209199
+neighborhood_Jacana,0.00013616454650015788
+neighborhood_Wantirna,0.00013317405842603976
+neighborhood_South Kingsville,0.00013290759026361282
+neighborhood_Forest Hill,0.00013274103472581258
+neighborhood_Frankston South,0.00013209504095115446
+neighborhood_Melbourne,0.00013099308930192136
+neighborhood_Doreen,0.00012968574527227552
+neighborhood_Eltham,0.00012487447312349597
+neighborhood_Nunawading,0.00012047132662590013
+neighborhood_Braybrook,0.00011719762665580483
+neighborhood_Frankston,0.00011648272023657619
+neighborhood_Watsonia,0.00011430264937068193
+neighborhood_Gisborne,0.00011415190292328154
+neighborhood_Vermont,0.00011254721158575925
+neighborhood_Edithvale,0.0001115851890215437
+neighborhood_Mitcham,0.00011038227698260397
+neighborhood_Montmorency,0.00010888270248272233
+neighborhood_Yallambie,0.0001068885286545038
+neighborhood_Mernda,0.00010641391367424766
+neighborhood_Bundoora,0.00010578958972601249
+neighborhood_Greensborough,0.00010511163055299586
+neighborhood_Warrandyte,9.575914406156053e-05
+neighborhood_Vermont South,9.551664528372624e-05
+neighborhood_Essendon North,9.130240475796292e-05
+neighborhood_Taylors Hill,8.846359209710206e-05
+neighborhood_Lalor,8.54586526632663e-05
+neighborhood_Donvale,8.183057658004965e-05
+neighborhood_Southbank,8.176905822616756e-05
+neighborhood_Greenvale,7.95612786623274e-05
+neighborhood_Gladstone Park,7.835272390375535e-05
+neighborhood_Campbellfield,7.802453642513692e-05
+neighborhood_Keilor Park,7.519074458914894e-05
+neighborhood_Eltham North,7.250324897186696e-05
+neighborhood_Heathmont,6.818049183524048e-05
+neighborhood_Dingley Village,6.456433747288854e-05
+neighborhood_Croydon North,6.424191056916419e-05
+neighborhood_Carrum Downs,6.239316556514974e-05
+neighborhood_Clayton South,6.229880690453843e-05
+neighborhood_Boronia,6.1382783956174e-05
+neighborhood_Cairnlea,5.734512243819308e-05
+neighborhood_Deer Park,5.5507342008870134e-05
+neighborhood_Williams Landing,5.403888816418746e-05
+neighborhood_Truganina,5.38772695181047e-05
+neighborhood_Narre Warren,5.2725668386465424e-05
+neighborhood_Bacchus Marsh,5.256331792296854e-05
+neighborhood_Westmeadows,5.1677802981513286e-05
+neighborhood_Thomastown,5.137073896238963e-05
+neighborhood_Tullamarine,5.038601298289091e-05
+neighborhood_Tarneit,5.034553895123012e-05
+neighborhood_Dallas,4.9683774566441726e-05
+neighborhood_Albanvale,4.905250081167664e-05
+neighborhood_Cranbourne,4.891626016518077e-05
+neighborhood_Mooroolbark,4.8440764492716464e-05
+neighborhood_Delahey,4.731447850174978e-05
+neighborhood_Sydenham,4.62632205403088e-05
+neighborhood_Kingsbury,4.363073925249508e-05
+neighborhood_Brooklyn,4.2854158201837826e-05
+neighborhood_The Basin,4.1359775513734015e-05
+neighborhood_Bonbeach,3.570129983210019e-05
+neighborhood_Doveton,3.472335713755804e-05
+neighborhood_Hallam,3.463909734509936e-05
+neighborhood_Keysborough,3.400255644440393e-05
+neighborhood_Keilor Downs,3.305554058543002e-05
+neighborhood_Derrimut,3.281815372716537e-05
+neighborhood_Huntingdale,3.2796446912471314e-05
+neighborhood_Glen Huntly,3.2248602888473174e-05
+neighborhood_Bellfield,2.846137146726309e-05
+neighborhood_Rowville,2.804593759616367e-05
+neighborhood_Keilor,2.7364166059911865e-05
+neighborhood_Notting Hill,2.720769383018631e-05
+neighborhood_Diamond Creek,2.6349700239867973e-05
+neighborhood_Strathmore Heights,2.610897785226803e-05
+neighborhood_Ringwood North,2.6073901158212707e-05
+neighborhood_Coolaroo,2.419222007132618e-05
+neighborhood_Scoresby,2.3310276979864177e-05
+neighborhood_Wyndham Vale,2.3213409586694432e-05
+neighborhood_Burnside Heights,2.2613069477163628e-05
+neighborhood_Docklands,2.180438634039627e-05
+neighborhood_Hampton Park,2.1728696582506184e-05
+neighborhood_Springvale,2.1652774998159193e-05
+neighborhood_Knoxfield,2.1136808084488063e-05
+neighborhood_Briar Hill,2.025867769819723e-05
+neighborhood_Ringwood East,1.9681386415659907e-05
+neighborhood_Diggers Rest,1.7859496361963633e-05
+neighborhood_Waterways,1.7348922423071852e-05
+neighborhood_Endeavour Hills,1.7151015594689557e-05
+neighborhood_Lower Plenty,1.6640145875909195e-05
+neighborhood_Monbulk,1.6254761803015985e-05
+neighborhood_Watsonia North,1.6143982623467485e-05
+neighborhood_Beaconsfield,1.6081653922281478e-05
+neighborhood_Clarinda,1.5798760980032542e-05
+neighborhood_St Helena,1.556723849651237e-05
+neighborhood_Bayswater,1.4160799711358278e-05
+neighborhood_Skye,1.3743367708762385e-05
+neighborhood_Kooyong,1.3668542451622355e-05
+neighborhood_Kings Park,1.3215789329370238e-05
+neighborhood_Chelsea,1.2238889152977846e-05
+neighborhood_Langwarrin,1.2034272038998924e-05
+neighborhood_Springvale South,1.0279478822242123e-05
+neighborhood_Seabrook,1.0059732026768532e-05
+neighborhood_Frankston North,9.079802163608076e-06
+neighborhood_Altona Meadows,8.993305686375874e-06
+neighborhood_Bayswater North,8.966109964169415e-06
+neighborhood_Attwood,8.884818149227811e-06
+neighborhood_Noble Park,8.315886552522484e-06
+neighborhood_North Warrandyte,7.897996284354407e-06
+neighborhood_Aspendale Gardens,7.106005407993591e-06
+neighborhood_Croydon Hills,6.479065206802424e-06
+neighborhood_Riddells Creek,6.07353962368698e-06
+neighborhood_Bullengarook,5.8488846506225066e-06
+neighborhood_Wallan,5.43472835975334e-06
+neighborhood_Mount Evelyn,4.668707776589892e-06
+neighborhood_Ardeer,4.283110428295354e-06
+neighborhood_Burnside,2.8013796591515117e-06
+neighborhood_New Gisborne,2.2504837693843325e-06
+neighborhood_Montrose,2.0871759509748078e-06
+neighborhood_Kilsyth,2.008530021434741e-06
+neighborhood_Chirnside Park,1.903529597685435e-06
+neighborhood_Cranbourne North,1.4930285568988538e-06
+neighborhood_Yarra Glen,1.4231968032689107e-06
+neighborhood_Keilor Lodge,1.4030315984351623e-06
+neighborhood_Chelsea Heights,1.0110596852881976e-06
+neighborhood_Whittlesea,8.952911717363265e-07
+neighborhood_Healesville,7.899983137073593e-07
+neighborhood_Deepdene,6.654639049789268e-07
+neighborhood_Croydon South,4.476465891502237e-07
+neighborhood_Sandhurst,3.0351672227900823e-07
+neighborhood_Officer,2.8185280831375913e-07
+neighborhood_Hurstbridge,2.496431935205768e-07

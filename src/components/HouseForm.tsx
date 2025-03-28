@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Card, 
   CardContent,
@@ -12,15 +12,81 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
-import { HouseData, defaultHouseData, neighborhoods } from '../data/modelData';
+import { HouseData, defaultHouseData } from '../data/modelData';
+import { useToast } from "@/components/ui/use-toast";
+import { fetchWithHandling } from '@/utils/api';
 
 interface HouseFormProps {
   onSubmit: (data: HouseData) => void;
   isLoading?: boolean;
+  isBackendReady?: boolean;
+}
+
+interface NeighborhoodsResponse {
+  neighborhoods: string[]; // Define the expected shape of the neighborhoods data
 }
 
 const HouseForm: React.FC<HouseFormProps> = ({ onSubmit, isLoading = false }) => {
   const [formData, setFormData] = useState<HouseData>({...defaultHouseData});
+  const [neighborhoods, setNeighborhoods] = useState<string[]>([]);
+  const [isLoadingNeighborhoods, setIsLoadingNeighborhoods] = useState(true);
+  const { toast } = useToast();
+
+  const DEFAULT_NEIGHBORHOODS = [
+    'Downtown',
+    'Suburban Heights',
+    'Riverside',
+    'West End',
+    'North Hills'
+  ];
+
+  // Load neighborhoods from API
+  useEffect(() => {
+    const fetchNeighborhoods = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/neighborhoods', {
+          headers: { 'Accept': 'application/json' }
+        });
+  
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+  
+        const contentType = response.headers.get('content-type');
+        if (!contentType?.includes('application/json')) {
+          throw new Error('Received non-JSON response');
+        }
+  
+        const data: NeighborhoodsResponse = await response.json(); // Type assertion
+  
+        if (!data.neighborhoods || !Array.isArray(data.neighborhoods)) {
+          throw new Error('Invalid neighborhoods data format');
+        }
+  
+        setNeighborhoods(data.neighborhoods);
+  
+        if (data.neighborhoods.length > 0) {
+          setFormData(prev => ({
+            ...prev,
+            neighborhood: data.neighborhoods[0]
+          }));
+        }
+      } catch (error) {
+        console.error('Neighborhood loading failed:', error);
+        setNeighborhoods(DEFAULT_NEIGHBORHOODS);
+        toast({
+          title: "Warning",
+          description: error.message || "Using default neighborhood options",
+          variant: "destructive",
+        });
+      } finally {
+        setIsLoadingNeighborhoods(false);
+      }
+    };
+  
+    fetchNeighborhoods();
+  }, []);
+  
 
   const handleChange = (field: keyof HouseData, value: any) => {
     setFormData(prev => ({
@@ -111,21 +177,35 @@ const HouseForm: React.FC<HouseFormProps> = ({ onSubmit, isLoading = false }) =>
             {/* Neighborhood */}
             <div className="input-group">
               <Label htmlFor="neighborhood" className="input-label">Neighborhood</Label>
-              <Select 
-                value={formData.neighborhood}
-                onValueChange={(value) => handleChange('neighborhood', value)}
-              >
-                <SelectTrigger>
-                  <SelectValue placeholder="Select neighborhood" />
-                </SelectTrigger>
-                <SelectContent>
-                  {neighborhoods.map((neighborhood) => (
-                    <SelectItem key={neighborhood} value={neighborhood}>
-                      {neighborhood}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              {isLoadingNeighborhoods ? (
+                <Input
+                  disabled
+                  value="Loading neighborhoods..."
+                  className="transition-all-fast"
+                />
+              ) : neighborhoods.length > 0 ? (
+                <Select 
+                  value={formData.neighborhood}
+                  onValueChange={(value) => handleChange('neighborhood', value)}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select neighborhood" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {neighborhoods.map((neighborhood) => (
+                      <SelectItem key={neighborhood} value={neighborhood}>
+                        {neighborhood}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              ) : (
+                <Input
+                  disabled
+                  value="No neighborhoods available"
+                  className="transition-all-fast"
+                />
+              )}
             </div>
             
             {/* Lot Size */}
@@ -199,7 +279,7 @@ const HouseForm: React.FC<HouseFormProps> = ({ onSubmit, isLoading = false }) =>
           <Button 
             type="submit" 
             className="w-full mt-6 transition-all-fast"
-            disabled={isLoading}
+            disabled={isLoading || isLoadingNeighborhoods}
           >
             {isLoading ? "Calculating..." : "Predict Price"}
           </Button>

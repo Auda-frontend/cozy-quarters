@@ -10,7 +10,11 @@ import {
 import { featureImportances } from '../data/modelData';
 import { Progress } from "@/components/ui/progress";
 
-const FeatureImportance: React.FC = () => {
+interface FeatureImportanceProps {
+  isBackendAvailable?: boolean;
+}
+
+const FeatureImportance: React.FC<FeatureImportanceProps> = () => {
   const barRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [hoveredFeature, setHoveredFeature] = useState<string | null>(null);
   
